@@ -1,0 +1,50 @@
+{
+  "headphones": [
+    {
+      "slug": "xx99-mark-two",
+      "name": "XX99 Mark II",
+      "description": "Premium headphones with active noise cancellation.",
+      "price": 2999,
+      "image": "xx99-mark-two.jpg"
+    },
+    {
+      "slug": "xx99-mark-one",
+      "name": "XX99 Mark I",
+      "description": "Affordable audiophile headphones.",
+      "price": 899,
+      "image": "xx59.jpg"
+    },
+    {
+      "slug": "xx59",
+      "name": "XX59",
+      "description": "Affordable audiophile headphones.",
+      "price": 899,
+      "image": "xx59.jpg"
+    }
+  ],
+  "speakers": [
+    {
+      "slug": "zx9",
+      "name": "ZX9 Speaker",
+      "description": "High-fidelity speaker for home audio.",
+      "price": 4500,
+      "image": "zx9.jpg"
+    },
+     {
+      "slug": "zx7",
+      "name": "ZX7 Speaker",
+      "description": "High-fidelity speaker for home audio.",
+      "price": 4500,
+      "image": "zx9.jpg"
+    }
+  ],
+  "earphones": [
+    {
+      "slug": "yx1",
+      "name": "YX1 Wireless Earphones",
+      "description": "Compact wireless earphones.",
+      "price": 599,
+      "image": "yx1.jpg"
+    }
+  ]
+}
