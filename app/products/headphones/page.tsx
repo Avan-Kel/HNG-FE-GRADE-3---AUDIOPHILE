@@ -9,7 +9,7 @@ export default function HeadphonesPage() {
     <main>
       <Navbar />
       <header className="bg-black text-white text-center py-20 uppercase tracking-widest text-3xl">
-        XX99 MARK I HEADPHONES
+        Headphones
       </header>
 
       <div className="max-w-6xl mx-auto px-8">
