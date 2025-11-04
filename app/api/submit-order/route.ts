@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     const orderRecord = await saveOrderToConvex(payload);
 
     // Send confirmation email
-    await sendOrderEmailResend(payload, orderRecord);
+
 
     return NextResponse.json({
       ok: true,

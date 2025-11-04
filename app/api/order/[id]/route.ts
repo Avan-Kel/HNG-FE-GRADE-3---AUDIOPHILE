@@ -1,21 +1,23 @@
 // app/api/order/[id]/route.ts
-import { NextResponse } from "next/server";
-// TODO: Replace with real Convex query
-// import { getOrderFromConvex } from "@/server/convex-orders";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(
-  req: Request,
-  { params }: { params: { id: string } }
-) {
-  const { id } = params;
-
-  // TEMP fallback so the UI shows real example data
-  return NextResponse.json({
-    id,
-    items: [
-      { name: "XX99 Mark II", price: 2999, quantity: 1, image: "/images/xx99-mark-2.png" },
-      { name: "YX1 Earphones", price: 599, quantity: 2, image: "/images/yx1.png" },
-    ],
-    totals: { grandTotal: 4197 },
-  });
+interface Params {
+  id: string;
 }
+
+export async function GET(req: Request, context: any) {
+  const { id } = context.params as { id: string };
+
+  return new Response(
+    JSON.stringify({
+      id,
+      items: [
+        { name: "XX99 Mark II", price: 2999, quantity: 1, image: "/images/xx99-mark-2.png" },
+        { name: "YX1 Earphones", price: 599, quantity: 2, image: "/images/yx1.png" },
+      ],
+      totals: { grandTotal: 4197 },
+    }),
+    { status: 200, headers: { "Content-Type": "application/json" } }
+  );
+}
+

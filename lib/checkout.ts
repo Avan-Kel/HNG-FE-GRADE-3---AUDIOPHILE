@@ -1,4 +1,5 @@
 // lib/checkout.ts
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { z } from "zod";
 
 export const OrderItemSchema = z.object({
