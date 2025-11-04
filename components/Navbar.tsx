@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { getCart, CartItem } from "@/lib/utils";
 
@@ -31,7 +30,7 @@ export default function Navbar() {
         </div>
 
         {/* Center: Navigation Links */}
-        <nav className="flex-1 flex justify-center space-x-8 hidden md:flex">
+        <nav className="flex-1 flex justify-center space-x-8 md:flex">
           <Link href="/" className="hover:text-orange-500 transition-colors">
             Home
           </Link>
